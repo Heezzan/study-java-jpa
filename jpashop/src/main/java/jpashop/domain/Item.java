@@ -1,4 +1,4 @@
-package shopping;
+package jpashop.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,17 +10,14 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Member {
+public class Item {
 
     @Id
     @GeneratedValue
-    @Column(name = "MEMBER_ID")
+    @Column(name = "ITEM_ID")
     private Long id;
 
     private String name;
-
-    private String city;
-    private String street;
-    private String zipcode;
-
+    private int price;
+    private int stockQuantity;
 }

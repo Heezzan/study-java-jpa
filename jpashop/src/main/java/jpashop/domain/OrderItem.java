@@ -1,4 +1,4 @@
-package shopping;
+package jpashop.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
