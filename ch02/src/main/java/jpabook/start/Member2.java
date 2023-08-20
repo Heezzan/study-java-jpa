@@ -18,11 +18,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @Entity
-@Table(name = "MEMBER", uniqueConstraints = {@UniqueConstraint(
+@Table(name = "MEMBER2", uniqueConstraints = {@UniqueConstraint(
     name = "NAME_AGE_UNIQUE",
     columnNames = {"NAME", "AGE"})})
 @ToString
-public class Member {
+public class Member2 {
 
     @Id
     @Column(name = "ID")

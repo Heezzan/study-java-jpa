@@ -20,7 +20,7 @@ public class DetachTest {
 
         tx.begin();
 
-        Member member = new Member();
+        Member2 member = new Member2();
         member.setId("member1");
         member.setUsername("회원1");
         member.setAge(0);
@@ -38,7 +38,7 @@ public class DetachTest {
 
         tx.begin();
 
-        Member member = em.find(Member.class, "memberA");
+        Member2 member = em.find(Member2.class, "memberA");
         em.clear();
 
         member.setUsername("changeName");
@@ -53,8 +53,8 @@ public class DetachTest {
 
         tx.begin();
 
-        Member memberA = em.find(Member.class, "memberA");
-        Member memberB = em.find(Member.class, "memberB");
+        Member2 memberA = em.find(Member2.class, "memberA");
+        Member2 memberB = em.find(Member2.class, "memberB");
 
         tx.commit();
         em.close();
