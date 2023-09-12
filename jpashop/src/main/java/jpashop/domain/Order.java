@@ -10,17 +10,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
 @Table(name = "ORDERS")
-@Getter
-@Setter
 public class Order {
 
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     @Column(name = "ORDER_ID")
     private Long id;
 
@@ -32,4 +27,5 @@ public class Order {
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
 }
