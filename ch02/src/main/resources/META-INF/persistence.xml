@@ -6,6 +6,7 @@
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value=""/>
+<!--            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>-->
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
 
@@ -20,7 +21,9 @@
             <property name="hibernate.id.new_generator_mappings" value="true"/>
 
             <!-- 애플리케이션 실행 시점에 데이터베이스 테이블을 자동으로 생성 -->
-<!--            <property name="hibernate.hbm2ddl.auto" value="create"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+            <property name="hibernate.discriminator.ignore_explicit_for_joined" value="true"/>
 
         </properties>
     </persistence-unit>

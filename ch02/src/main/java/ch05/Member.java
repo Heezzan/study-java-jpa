@@ -12,7 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity
+@Entity(name = "MEMBER05")
 public class Member {
 
     @Id
