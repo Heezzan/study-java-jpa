@@ -1,4 +1,4 @@
-package jpashop.domain;
+package jpashop.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +13,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Delivery {
+public class Delivery extends BaseEntity {
 
     @Id @GeneratedValue
     @Column(name = "DELIVERY_ID")

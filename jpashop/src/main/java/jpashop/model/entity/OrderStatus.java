@@ -1,4 +1,4 @@
-package jpashop.domain;
+package jpashop.model.entity;
 
 public enum OrderStatus {
 
